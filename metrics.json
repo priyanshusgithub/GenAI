@@ -1,0 +1,438 @@
+{
+  "source": "https://www.gutenberg.org/cache/epub/11/pg11.txt",
+  "dataset": {
+    "tokens": 31934,
+    "train_partition_tokens": 25547,
+    "train_tokens_used": 25547,
+    "validation_tokens": 3193,
+    "test_tokens": 3194,
+    "vocabulary": 1280,
+    "unknown_validation_rate": 0.0970873786407767,
+    "unknown_test_rate": 0.10613650594865373
+  },
+  "configuration": {
+    "epochs": 8,
+    "context": 12,
+    "batch_size": 128,
+    "max_train_windows": 0,
+    "device": "cpu"
+  },
+  "models": {
+    "rnn": {
+      "parameters": 151936,
+      "training_seconds": 8.19105076599999,
+      "selected_epoch": 8,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 5.523676062778692,
+          "validation_loss": 4.808697457959614,
+          "validation_accuracy": 0.12983338572775857
+        },
+        {
+          "epoch": 2,
+          "train_loss": 4.862756956947137,
+          "validation_loss": 4.46817925125501,
+          "validation_accuracy": 0.17353033637221
+        },
+        {
+          "epoch": 3,
+          "train_loss": 4.506993865574645,
+          "validation_loss": 4.330781900069504,
+          "validation_accuracy": 0.18547626532536937
+        },
+        {
+          "epoch": 4,
+          "train_loss": 4.263641296414356,
+          "validation_loss": 4.242029059948842,
+          "validation_accuracy": 0.18924866394215656
+        },
+        {
+          "epoch": 5,
+          "train_loss": 4.074811324182499,
+          "validation_loss": 4.188329126429386,
+          "validation_accuracy": 0.19207796290474694
+        },
+        {
+          "epoch": 6,
+          "train_loss": 3.9179938651074258,
+          "validation_loss": 4.1558329807966246,
+          "validation_accuracy": 0.18893429739075762
+        },
+        {
+          "epoch": 7,
+          "train_loss": 3.7829815213685403,
+          "validation_loss": 4.1594449534651545,
+          "validation_accuracy": 0.18516189877397046
+        },
+        {
+          "epoch": 8,
+          "train_loss": 3.664361452491451,
+          "validation_loss": 4.128203434301075,
+          "validation_accuracy": 0.19836529393272556
+        }
+      ],
+      "test": {
+        "loss": 4.19602081087833,
+        "perplexity": 66.42150077218747,
+        "accuracy": 0.20961659333752358
+      },
+      "samples": [
+        {
+          "seed": "alice was beginning to",
+          "temperature": 0.5,
+          "text": "alice was beginning to be a time to herself , and was no , said the gryphon , and behind the same thing she said to herself , and the queen , and she tried to get out again . i ve tried to be no , said the duchess . suddenly , i",
+          "distinct_2": 0.8163265306122449,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "alice was beginning to",
+          "temperature": 1.0,
+          "text": "alice was beginning to be a time to begin with her head through , she see to herself that cats day change the whiting said , my love , as he right contemptuously , and it used to that you re talk to an with up it . the king followed suddenly some water",
+          "distinct_2": 1.0,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "alice was beginning to",
+          "temperature": 1.5,
+          "text": "alice was beginning to be a time he was much glad as no do did see why with a few day change the whiting said nothing . you won t paris which hold walking eye it used face again . i waistcoat may go with face it may the number followed suddenly fun at",
+          "distinct_2": 1.0,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "the rabbit said to alice",
+          "temperature": 0.5,
+          "text": "the rabbit said to alice , and the dormouse was looking anxiously over . i ve seen to do that it was just beginning to make me , said alice . he was very much , but they were that they re a large kitchen , and it was a little different suddenly , and",
+          "distinct_2": 0.9387755102040817,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "the rabbit said to alice",
+          "temperature": 1.0,
+          "text": "the rabbit said to alice , and hurried to herself much as well as for your hair why with a few day change the whiting said , my love , as he right contemptuously , and it used to that you re talk to an with up it . the king followed suddenly some water",
+          "distinct_2": 0.9795918367346939,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "the rabbit said to alice",
+          "temperature": 1.5,
+          "text": "the rabbit said to alice be unhappy time to begin made since gone through for your see why with a few day change the whiting said nothing . you won t paris which hold walking eye it used face again . i waistcoat may go with face it may the number followed suddenly fun at",
+          "distinct_2": 1.0,
+          "adjacent_repetition_rate": 0.0
+        }
+      ]
+    },
+    "birnn": {
+      "parameters": 241152,
+      "training_seconds": 14.245267518999754,
+      "selected_epoch": 5,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 5.404669505489626,
+          "validation_loss": 4.623463491267732,
+          "validation_accuracy": 0.15875510845646024
+        },
+        {
+          "epoch": 2,
+          "train_loss": 4.6467190650804,
+          "validation_loss": 4.3897612019178816,
+          "validation_accuracy": 0.18013203395158756
+        },
+        {
+          "epoch": 3,
+          "train_loss": 4.246048425092187,
+          "validation_loss": 4.281653818264205,
+          "validation_accuracy": 0.19333542911034265
+        },
+        {
+          "epoch": 4,
+          "train_loss": 3.928644149121833,
+          "validation_loss": 4.275154063402576,
+          "validation_accuracy": 0.18390443256837471
+        },
+        {
+          "epoch": 5,
+          "train_loss": 3.65178179843612,
+          "validation_loss": 4.255141957680859,
+          "validation_accuracy": 0.1927066960075448
+        },
+        {
+          "epoch": 6,
+          "train_loss": 3.404598517807258,
+          "validation_loss": 4.282833354797651,
+          "validation_accuracy": 0.19459289531593837
+        },
+        {
+          "epoch": 7,
+          "train_loss": 3.186717190284049,
+          "validation_loss": 4.310315263754765,
+          "validation_accuracy": 0.1895630304935555
+        },
+        {
+          "epoch": 8,
+          "train_loss": 2.9891720982337384,
+          "validation_loss": 4.34458112192019,
+          "validation_accuracy": 0.19647909462433197
+        }
+      ],
+      "test": {
+        "loss": 4.277662410292515,
+        "perplexity": 72.07176871724211,
+        "accuracy": 0.2023884349465745
+      },
+      "samples": [
+        {
+          "seed": "alice was beginning to",
+          "temperature": 0.5,
+          "text": "alice was beginning to be a pity of a thing , and the rabbit hole see it was a large cauldron just as she said to the other side of the right was , and she was very much and so she could not , so it was gone , and suddenly at the",
+          "distinct_2": 0.9387755102040817,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "alice was beginning to",
+          "temperature": 1.0,
+          "text": "alice was beginning to be a time to when there had gone no silent did what myself with a behind day change it she said to herself , won seems ! sh contemptuously walking , but one face was though twice swam that it with up it . the other jumped suddenly fun at",
+          "distinct_2": 1.0,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "alice was beginning to",
+          "temperature": 1.5,
+          "text": "alice was beginning to be nose time to when there outside their sort for your see why chin a behind day change it she said nothing my hurried sort seems paris out contemptuously walking eye it used face that uncomfortable through waistcoat that there with forgotten it may waiting something followed suddenly fun water",
+          "distinct_2": 1.0,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "the rabbit said to alice",
+          "temperature": 0.5,
+          "text": "the rabbit said to alice , and alice replied . there s no sort to the see , and she had been a sudden little golden key . you re seems to be a very much , said alice . and she began to get with up it . the queen was suddenly out ,",
+          "distinct_2": 0.9591836734693877,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "the rabbit said to alice",
+          "temperature": 1.0,
+          "text": "the rabbit said to alice , and alice replied down with one as no , she see why with a few day change it she said nothing . you won t paris , for she came it used face again and tears began that it with up it . the other followed suddenly fun at",
+          "distinct_2": 1.0,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "the rabbit said to alice",
+          "temperature": 1.5,
+          "text": "the rabbit said to alice be a time tone when there outside their dormouse to bend see why chin a few day change it she said nothing . you won seems paris out contemptuously walking herself it used face again and key with its great with face it into the other followed suddenly fun at",
+          "distinct_2": 1.0,
+          "adjacent_repetition_rate": 0.0
+        }
+      ]
+    },
+    "lstm": {
+      "parameters": 173824,
+      "training_seconds": 11.361715927000205,
+      "selected_epoch": 8,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 5.599680260844442,
+          "validation_loss": 4.932736111077,
+          "validation_accuracy": 0.14083621502672117
+        },
+        {
+          "epoch": 2,
+          "train_loss": 5.030573259689394,
+          "validation_loss": 4.614750621979134,
+          "validation_accuracy": 0.16912920465262496
+        },
+        {
+          "epoch": 3,
+          "train_loss": 4.728777419150588,
+          "validation_loss": 4.415427175867824,
+          "validation_accuracy": 0.18421879911977365
+        },
+        {
+          "epoch": 4,
+          "train_loss": 4.502758797895239,
+          "validation_loss": 4.2958865221174065,
+          "validation_accuracy": 0.19930839358692234
+        },
+        {
+          "epoch": 5,
+          "train_loss": 4.327418789173587,
+          "validation_loss": 4.231212713103068,
+          "validation_accuracy": 0.2046526249607042
+        },
+        {
+          "epoch": 6,
+          "train_loss": 4.183669957709401,
+          "validation_loss": 4.176624872518837,
+          "validation_accuracy": 0.21062558943728388
+        },
+        {
+          "epoch": 7,
+          "train_loss": 4.056160884037022,
+          "validation_loss": 4.149301739392585,
+          "validation_accuracy": 0.20842502357749135
+        },
+        {
+          "epoch": 8,
+          "train_loss": 3.9422313116804504,
+          "validation_loss": 4.129464939456809,
+          "validation_accuracy": 0.21754165356806035
+        }
+      ],
+      "test": {
+        "loss": 4.170496031295421,
+        "perplexity": 64.74756095978512,
+        "accuracy": 0.22470144563167818
+      },
+      "samples": [
+        {
+          "seed": "alice was beginning to",
+          "temperature": 0.5,
+          "text": "alice was beginning to be a time to herself , and was no to see what you d said to be a number of some way of the rest of paris , and she had been much to be a little golden key . it s it was a little of its little gardeners",
+          "distinct_2": 0.8979591836734694,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "alice was beginning to",
+          "temperature": 1.0,
+          "text": "alice was beginning to be a time to herself much , as no for your see why with a few day change the whiting said the king , won t paris , and walking eye time much face again and tears with its great with face it , and alice followed suddenly a water",
+          "distinct_2": 0.9795918367346939,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "alice was beginning to",
+          "temperature": 1.5,
+          "text": "alice was beginning to be a time to when there outside as no opened your see why with a few day change the whiting said nothing ! hurried rest were paris out contemptuously walking eye time one face that uncomfortable again with its great with face it may waiting something followed suddenly fun at",
+          "distinct_2": 1.0,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "the rabbit said to alice",
+          "temperature": 0.5,
+          "text": "the rabbit said to alice , and she was a very glad to get to see what you d said to be a number of some way of the rest of paris , and she had been much to be a little golden key . it s it was a little of its little gardeners",
+          "distinct_2": 0.8775510204081632,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "the rabbit said to alice",
+          "temperature": 1.0,
+          "text": "the rabbit said to alice , and hurried to herself much many as no , did what why with a few day change the whiting said the king , won t paris , and walking eye time much face again and tears with its great with face it , and alice followed suddenly a water",
+          "distinct_2": 0.9591836734693877,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "the rabbit said to alice",
+          "temperature": 1.5,
+          "text": "the rabbit said to alice be a time to when there outside as no opened your see why with a few day change the whiting said nothing ! hurried rest were paris out contemptuously walking eye time one face that uncomfortable again with its great with face it may waiting something followed suddenly fun at",
+          "distinct_2": 1.0,
+          "adjacent_repetition_rate": 0.0
+        }
+      ]
+    },
+    "gru": {
+      "parameters": 166528,
+      "training_seconds": 14.37729860699983,
+      "selected_epoch": 8,
+      "history": [
+        {
+          "epoch": 1,
+          "train_loss": 5.569768659648817,
+          "validation_loss": 4.801848588144206,
+          "validation_accuracy": 0.13895001571832757
+        },
+        {
+          "epoch": 2,
+          "train_loss": 4.88579542394578,
+          "validation_loss": 4.461357483658466,
+          "validation_accuracy": 0.1804464005029865
+        },
+        {
+          "epoch": 3,
+          "train_loss": 4.516490568366796,
+          "validation_loss": 4.293786910823665,
+          "validation_accuracy": 0.19616472807293303
+        },
+        {
+          "epoch": 4,
+          "train_loss": 4.2518540030569625,
+          "validation_loss": 4.186187130143455,
+          "validation_accuracy": 0.2059100911662999
+        },
+        {
+          "epoch": 5,
+          "train_loss": 4.044431825867132,
+          "validation_loss": 4.133958141970882,
+          "validation_accuracy": 0.20716755737189563
+        },
+        {
+          "epoch": 6,
+          "train_loss": 3.8726115428143246,
+          "validation_loss": 4.095022557104807,
+          "validation_accuracy": 0.21219742219427853
+        },
+        {
+          "epoch": 7,
+          "train_loss": 3.7211716336514913,
+          "validation_loss": 4.102211840382839,
+          "validation_accuracy": 0.2159698208110657
+        },
+        {
+          "epoch": 8,
+          "train_loss": 3.584598737232648,
+          "validation_loss": 4.072424189769333,
+          "validation_accuracy": 0.22068531908204966
+        }
+      ],
+      "test": {
+        "loss": 4.161119097812156,
+        "perplexity": 64.14326503661428,
+        "accuracy": 0.23035826524198616
+      },
+      "samples": [
+        {
+          "seed": "alice was beginning to",
+          "temperature": 0.5,
+          "text": "alice was beginning to be a time to herself , and was no , she went on , and behind her to see she said to the stick , and had to be walking , and the dormouse was very soon , and the dormouse s it was the rabbit , and the rabbit",
+          "distinct_2": 0.8163265306122449,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "alice was beginning to",
+          "temperature": 1.0,
+          "text": "alice was beginning to be a time to begin with an encouraging unhappy for your see , with a few day change the lefthand . there was a waistcoat seems to pieces contemptuously , and it ever face that would twist with its great with running it , and alice followed suddenly a water",
+          "distinct_2": 0.9795918367346939,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "alice was beginning to",
+          "temperature": 1.5,
+          "text": "alice was beginning to be a time to begin with stuff as no , did see why with a few day change the whiting said nothing my keeping side as paris right contemptuously walking ever time one face again and tears how are an sleep hare it may the number followed suddenly fun at",
+          "distinct_2": 1.0,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "the rabbit said to alice",
+          "temperature": 0.5,
+          "text": "the rabbit said to alice , and she looked down in the other , and she went on , and behind her to see she said to the stick , and had to be walking , and the dormouse was very soon , and the dormouse s it was the rabbit , and the rabbit",
+          "distinct_2": 0.7755102040816326,
+          "adjacent_repetition_rate": 0.0
+        },
+        {
+          "seed": "the rabbit said to alice",
+          "temperature": 1.0,
+          "text": "the rabbit said to alice , and hurried in a neck ring , no , did see why with a few day change the march hare ! why you won t paris , hold walking herself it used to that you re re all an sleep hare it may the number followed suddenly fun ,",
+          "distinct_2": 1.0,
+          "adjacent_repetition_rate": 0.02040816326530612
+        },
+        {
+          "seed": "the rabbit said to alice",
+          "temperature": 1.5,
+          "text": "the rabbit said to alice , and hurried herself was much sitting as no , did see why with a few day change the whiting said nothing my keeping side as paris right contemptuously walking ever time one face again and tears how are an sleep hare it may the number followed suddenly fun at",
+          "distinct_2": 1.0,
+          "adjacent_repetition_rate": 0.0
+        }
+      ]
+    }
+  }
+}
