@@ -36,11 +36,11 @@ Cross-entropy and perplexity are lower when better; next-word top-1 accuracy is 
 | LSTM | 173,824 | 8 | 11.4 | 4.170 | 64.748 | 22.5% |
 | GRU | 166,528 | 8 | 14.4 | **4.161** | **64.143** | **23.0%** |
 
-Values are rounded here; exact results and per-epoch histories are in [`results/metrics.json`](results/metrics.json). The plot [`results/validation_loss.png`](results/validation_loss.png) shows validation loss by epoch. The bidirectional RNN's training loss kept falling after epoch 5 while validation loss rose, suggesting overfitting on this small corpus. Its bidirectionality also cannot see future target words during generation, which limits the benefit often seen in tasks with full-sequence access.
+Values are rounded here; exact results and per-epoch histories are in [`metrics.json`](metrics.json). The plot [`validation_loss.png`](validation_loss.png) shows validation loss by epoch. The bidirectional RNN's training loss kept falling after epoch 5 while validation loss rose, suggesting overfitting on this small corpus. Its bidirectionality also cannot see future target words during generation, which limits the benefit often seen in tasks with full-sequence access.
 
 ## Text generation and temperature analysis
 
-Each model continues the **same two seeds** (`alice was beginning to`; `the rabbit said to alice`) for 50 sampled tokens at temperatures **0.5, 1.0, and 1.5**. Sampling scales logits by `1 / temperature` before softmax. Lower temperatures sharpen frequent-word probabilities; higher temperatures flatten them. The complete 24 outputs are in [`results/generated_samples.md`](results/generated_samples.md).
+Each model continues the **same two seeds** (`alice was beginning to`; `the rabbit said to alice`) for 50 sampled tokens at temperatures **0.5, 1.0, and 1.5**. Sampling scales logits by `1 / temperature` before softmax. Lower temperatures sharpen frequent-word probabilities; higher temperatures flatten them. The complete 24 outputs are in [`generated_samples.md`](generated_samples.md).
 
 The table reports distinct bigram fraction averaged across the two continuations per setting. A lower value generally indicates more reuse of phrases; it is not a direct measure of grammatical quality.
 
